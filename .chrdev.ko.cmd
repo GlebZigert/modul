@@ -1,0 +1,1 @@
+cmd_/usr/local/yourapp/modul/chrdev.ko := ld -r -m elf_i386 -T ./scripts/module-common.lds --build-id  -o /usr/local/yourapp/modul/chrdev.ko /usr/local/yourapp/modul/chrdev.o /usr/local/yourapp/modul/chrdev.mod.o ;  true

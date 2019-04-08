@@ -1,0 +1,1 @@
+cmd_/usr/local/yourapp/modul/simple_module_init.ko := ld -r -m elf_i386 -T ./scripts/module-common.lds --build-id  -o /usr/local/yourapp/modul/simple_module_init.ko /usr/local/yourapp/modul/simple_module_init.o /usr/local/yourapp/modul/simple_module_init.mod.o ;  true
