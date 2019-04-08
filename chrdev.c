@@ -45,7 +45,7 @@ static ssize_t mychrdrv_write(struct file *file, const char __user *buf, size_t 
 	*ppos += nbytes;
 
 	printk(KERN_INFO "Write device %s nbytes = %d,ppos =%d: \n\n",MYDEV_NAME, nbytes, (int)*ppos);
-	return 0;
+	return nbytes;
 }
 
 static const struct file_operations mycdev_fops = {

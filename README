@@ -1,0 +1,22 @@
+----------------------------------
+запуск
+----------------------------------
+
+sudo mknod /dev/chrdrv c 700 0 создать нод устройства
+sudo ls -la /dev/chrdrv
+sudo chmod a+rw /dev/chrdrv
+sudo insmod ./chrdev.ko
+sudo lsmod | grep chrd
+cat /proc/modules | grep chrd
+tail -f /var/log/syslog
+
+-----------------------------------
+git
+-----------------------------------
+git init
+git add . all
+git commit -m "commit comment"
+git remote add origin https://github.com/GlebZigert/modul.git
+git push -u origin master
+
+git clone URL
