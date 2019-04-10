@@ -13,3 +13,6 @@ PWD := $(shell pwd)
 default:
 	$(MAKE) -C $(KERNELDIR) M=$(PWD) modules
 endif
+
+userapp:
+	gcc -o userapp userapp.c

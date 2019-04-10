@@ -1,3 +1,3 @@
-/home/gleb/Desktop/folder/modul/chrdev.ko
-/home/gleb/Desktop/folder/modul/chrdev.o
+/usr/local/yourapp/chrdev/modul/chrdev.ko
+/usr/local/yourapp/chrdev/modul/chrdev.o
 

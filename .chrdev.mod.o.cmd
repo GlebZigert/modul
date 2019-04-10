@@ -1,8 +1,8 @@
-cmd_/home/gleb/Desktop/folder/modul/chrdev.mod.o := gcc -Wp,-MD,/home/gleb/Desktop/folder/modul/.chrdev.mod.o.d  -nostdinc -isystem /usr/lib/gcc/i686-linux-gnu/5/include  -I./arch/x86/include -I./arch/x86/include/generated/uapi -I./arch/x86/include/generated  -I./include -I./arch/x86/include/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -Iubuntu/include  -D__KERNEL__ -fno-pie -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -std=gnu89 -fno-PIE -fno-pie -no-pie -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -m32 -msoft-float -mregparm=3 -freg-struct-return -fno-pic -mpreferred-stack-boundary=2 -march=i686 -mtune=generic -maccumulate-outgoing-args -Wa,-mtune=generic32 -ffreestanding -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_SSSE3=1 -DCONFIG_AS_CRC32=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -DCONFIG_AS_SHA1_NI=1 -DCONFIG_AS_SHA256_NI=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -fno-delete-null-pointer-checks -Wno-maybe-uninitialized -O2 --param=allow-store-data-races=0 -Wframe-larger-than=1024 -fstack-protector-strong -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -pg -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time -Werror=incompatible-pointer-types -DCC_HAVE_ASM_GOTO  -DKBUILD_BASENAME='"chrdev.mod"'  -DKBUILD_MODNAME='"chrdev"' -DMODULE  -c -o /home/gleb/Desktop/folder/modul/chrdev.mod.o /home/gleb/Desktop/folder/modul/chrdev.mod.c
+cmd_/usr/local/yourapp/chrdev/modul/chrdev.mod.o := gcc -Wp,-MD,/usr/local/yourapp/chrdev/modul/.chrdev.mod.o.d  -nostdinc -isystem /usr/lib/gcc/i686-linux-gnu/5/include  -I./arch/x86/include -I./arch/x86/include/generated/uapi -I./arch/x86/include/generated  -I./include -I./arch/x86/include/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -Iubuntu/include  -D__KERNEL__ -fno-pie -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -std=gnu89 -fno-PIE -fno-pie -no-pie -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -m32 -msoft-float -mregparm=3 -freg-struct-return -fno-pic -mpreferred-stack-boundary=2 -march=i686 -mtune=generic -maccumulate-outgoing-args -Wa,-mtune=generic32 -ffreestanding -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_SSSE3=1 -DCONFIG_AS_CRC32=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -DCONFIG_AS_AVX512=1 -DCONFIG_AS_SHA1_NI=1 -DCONFIG_AS_SHA256_NI=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -fno-delete-null-pointer-checks -O2 --param=allow-store-data-races=0 -DCC_HAVE_ASM_GOTO -Wframe-larger-than=1024 -fstack-protector-strong -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -pg -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time -Werror=incompatible-pointer-types  -DKBUILD_BASENAME='"chrdev.mod"'  -DKBUILD_MODNAME='"chrdev"' -DMODULE  -c -o /usr/local/yourapp/chrdev/modul/chrdev.mod.o /usr/local/yourapp/chrdev/modul/chrdev.mod.c
 
-source_/home/gleb/Desktop/folder/modul/chrdev.mod.o := /home/gleb/Desktop/folder/modul/chrdev.mod.c
+source_/usr/local/yourapp/chrdev/modul/chrdev.mod.o := /usr/local/yourapp/chrdev/modul/chrdev.mod.c
 
-deps_/home/gleb/Desktop/folder/modul/chrdev.mod.o := \
+deps_/usr/local/yourapp/chrdev/modul/chrdev.mod.o := \
     $(wildcard include/config/module/unload.h) \
   include/linux/module.h \
     $(wildcard include/config/modules.h) \
@@ -73,6 +73,7 @@ deps_/home/gleb/Desktop/folder/modul/chrdev.mod.o := \
   include/linux/export.h \
     $(wildcard include/config/have/underscore/symbol/prefix.h) \
     $(wildcard include/config/modversions.h) \
+    $(wildcard include/config/module/rel/crcs.h) \
     $(wildcard include/config/trim/unused/ksyms.h) \
   arch/x86/include/asm/linkage.h \
     $(wildcard include/config/x86/64.h) \
@@ -122,14 +123,14 @@ deps_/home/gleb/Desktop/folder/modul/chrdev.mod.o := \
   include/linux/typecheck.h \
   include/linux/printk.h \
     $(wildcard include/config/message/loglevel/default.h) \
+    $(wildcard include/config/console/loglevel/default.h) \
     $(wildcard include/config/early/printk.h) \
     $(wildcard include/config/printk/nmi.h) \
     $(wildcard include/config/printk.h) \
+    $(wildcard include/config/kmsg/ids.h) \
     $(wildcard include/config/dynamic/debug.h) \
   include/linux/init.h \
-    $(wildcard include/config/broken/rodata.h) \
     $(wildcard include/config/debug/rodata.h) \
-    $(wildcard include/config/lto.h) \
   include/linux/kern_levels.h \
   include/linux/cache.h \
     $(wildcard include/config/arch/has/cache/line/size.h) \
@@ -171,16 +172,20 @@ deps_/home/gleb/Desktop/folder/modul/chrdev.mod.o := \
   include/linux/percpu-defs.h \
     $(wildcard include/config/debug/force/weak/per/cpu.h) \
   include/linux/thread_info.h \
-    $(wildcard include/config/compat.h) \
+    $(wildcard include/config/thread/info/in/task.h) \
     $(wildcard include/config/debug/stack/usage.h) \
     $(wildcard include/config/have/arch/within/stack/frames.h) \
     $(wildcard include/config/hardened/usercopy.h) \
   include/linux/bug.h \
+    $(wildcard include/config/bug/on/data/corruption.h) \
   arch/x86/include/asm/bug.h \
     $(wildcard include/config/debug/bugverbose.h) \
   include/asm-generic/bug.h \
     $(wildcard include/config/bug.h) \
     $(wildcard include/config/generic/bug/relative/pointers.h) \
+  include/linux/restart_block.h \
+    $(wildcard include/config/compat.h) \
+  arch/x86/include/asm/current.h \
   arch/x86/include/asm/thread_info.h \
     $(wildcard include/config/vm86.h) \
     $(wildcard include/config/frame/pointer.h) \
@@ -215,7 +220,6 @@ deps_/home/gleb/Desktop/folder/modul/chrdev.mod.o := \
     $(wildcard include/config/x86/fast/feature/tests.h) \
   arch/x86/include/asm/processor.h \
     $(wildcard include/config/cc/stackprotector.h) \
-    $(wildcard include/config/m486.h) \
     $(wildcard include/config/x86/debugctlmsr.h) \
     $(wildcard include/config/xen.h) \
   arch/x86/include/asm/processor-flags.h \
@@ -228,7 +232,6 @@ deps_/home/gleb/Desktop/folder/modul/chrdev.mod.o := \
   arch/x86/include/uapi/asm/ptrace-abi.h \
   arch/x86/include/asm/paravirt_types.h \
     $(wildcard include/config/pgtable/levels.h) \
-    $(wildcard include/config/queued/spinlocks.h) \
     $(wildcard include/config/paravirt/debug.h) \
   arch/x86/include/asm/desc_defs.h \
   arch/x86/include/asm/kmap_types.h \
@@ -247,7 +250,6 @@ deps_/home/gleb/Desktop/folder/modul/chrdev.mod.o := \
   include/asm-generic/qrwlock_types.h \
   include/asm-generic/ptrace.h \
   arch/x86/include/uapi/asm/sigcontext.h \
-  arch/x86/include/asm/current.h \
   arch/x86/include/asm/msr.h \
   arch/x86/include/asm/msr-index.h \
     $(wildcard include/config/tdp/nominal.h) \
@@ -395,9 +397,11 @@ deps_/home/gleb/Desktop/folder/modul/chrdev.mod.o := \
   include/linux/errno.h \
   include/uapi/linux/errno.h \
   include/linux/mutex.h \
-    $(wildcard include/config/debug/mutexes.h) \
     $(wildcard include/config/mutex/spin/on/owner.h) \
+    $(wildcard include/config/debug/mutexes.h) \
   include/linux/osq_lock.h \
+  include/linux/debug_locks.h \
+    $(wildcard include/config/debug/locking/api/selftests.h) \
   include/linux/rwsem.h \
     $(wildcard include/config/rwsem/spin/on/owner.h) \
     $(wildcard include/config/rwsem/generic/spinlock.h) \
@@ -473,7 +477,6 @@ deps_/home/gleb/Desktop/folder/modul/chrdev.mod.o := \
   include/linux/edd.h \
   include/uapi/linux/edd.h \
   arch/x86/include/asm/e820.h \
-    $(wildcard include/config/efi.h) \
     $(wildcard include/config/hibernation.h) \
   arch/x86/include/uapi/asm/e820.h \
     $(wildcard include/config/x86/pmem/legacy.h) \
@@ -505,6 +508,7 @@ deps_/home/gleb/Desktop/folder/modul/chrdev.mod.o := \
   arch/x86/include/asm/numa.h \
     $(wildcard include/config/numa/emu.h) \
   arch/x86/include/asm/topology.h \
+    $(wildcard include/config/sched/mc/prio.h) \
   include/asm-generic/topology.h \
   arch/x86/include/asm/numa_32.h \
   arch/x86/include/asm/mmu.h \
@@ -513,6 +517,7 @@ deps_/home/gleb/Desktop/folder/modul/chrdev.mod.o := \
     $(wildcard include/config/acpi/sleep.h) \
   arch/x86/include/asm/io.h \
     $(wildcard include/config/mtrr.h) \
+    $(wildcard include/config/x86/pat.h) \
   arch/x86/include/generated/asm/early_ioremap.h \
   include/asm-generic/early_ioremap.h \
     $(wildcard include/config/generic/early/ioremap.h) \
@@ -532,7 +537,6 @@ deps_/home/gleb/Desktop/folder/modul/chrdev.mod.o := \
   arch/x86/include/asm/pvclock-abi.h \
   arch/x86/include/asm/xen/hypervisor.h \
   include/asm-generic/fixmap.h \
-  arch/x86/include/asm/idle.h \
   arch/x86/include/asm/io_apic.h \
   arch/x86/include/asm/irq_vectors.h \
     $(wildcard include/config/have/kvm.h) \
@@ -581,6 +585,7 @@ deps_/home/gleb/Desktop/folder/modul/chrdev.mod.o := \
   include/linux/extable.h \
   include/linux/rbtree_latch.h \
   arch/x86/include/asm/module.h \
+    $(wildcard include/config/m486.h) \
     $(wildcard include/config/m586.h) \
     $(wildcard include/config/m586tsc.h) \
     $(wildcard include/config/m586mmx.h) \
@@ -609,6 +614,6 @@ deps_/home/gleb/Desktop/folder/modul/chrdev.mod.o := \
   include/linux/vermagic.h \
   include/generated/utsrelease.h \
 
-/home/gleb/Desktop/folder/modul/chrdev.mod.o: $(deps_/home/gleb/Desktop/folder/modul/chrdev.mod.o)
+/usr/local/yourapp/chrdev/modul/chrdev.mod.o: $(deps_/usr/local/yourapp/chrdev/modul/chrdev.mod.o)
 
-$(deps_/home/gleb/Desktop/folder/modul/chrdev.mod.o):
+$(deps_/usr/local/yourapp/chrdev/modul/chrdev.mod.o):
